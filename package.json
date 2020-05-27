@@ -1,15 +1,32 @@
 {
-  "name": "golden-acorn-app",
+  "name": "Golden-Acorn-App",
   "version": "1.0.0",
-  "description": "Golden Acorn App",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "react-scripts test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "\u0016https://github.com/valendre/Golden-Acorn-App.git"
+    "url": "git+https://github.com/valendre/Golden-Acorn-App.git"
   },
-  "author": "Endre Valach",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valendre/Golden-Acorn-App/issues"
+  },
+  "homepage": "https://github.com/valendre/Golden-Acorn-App#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/preset-react": "^7.10.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
