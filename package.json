@@ -1,17 +1,19 @@
 {
   "name": "Golden-Acorn-App",
   "version": "1.0.0",
-  "description": "",
+  "description": "Golden Acorn App",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "lint": "eslint ./src/"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/valendre/Golden-Acorn-App.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Endre Valach",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/valendre/Golden-Acorn-App/issues"
