@@ -1,0 +1,15 @@
+{
+  "name": "golden-acorn-app",
+  "version": "1.0.0",
+  "description": "Golden Acorn App",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/valendre/Golden-Acorn-App.git"
+  },
+  "author": "Endre Valach",
+  "license": "ISC"
+}
