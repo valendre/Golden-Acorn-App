@@ -2,15 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-let counter = 0;
-
 function Button(props) {
     return (
-        <button
-            className="square" onClick={function() { 
-                alert(counter); 
-                }}
-        >
+        <button onClick={props.onClick}>
             {props.label}
         </button>
     );
@@ -20,22 +14,46 @@ function Display(props) {
     return <p>{props.children}</p>
 }
 
-class App extends React.Component {
+class SimpleGoldenAcornApp extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: 0
+        };
+    }
+
+    handleClick(i) {
+        this.setState({
+            value: this.state.value + i,
+        });
+        if (this.state.value + i < 0) {
+            this.setState({
+                value: 0,
+            });
+        }
+    }
 
     render() {
         return (
             <main>
-                <Button label="Buy one" value={counter} />
+                <Button
+                    label="Buy one"
+                    onClick={() => this.handleClick(1)}
+                />
                 <Display>
-                    {counter}
+                    {this.state.value}
                 </Display>
-                <Button label="Eat one" value={counter}/>
+                <Button
+                    label="Eat one"
+                    onClick={() => this.handleClick(-1)}
+
+                />
             </main>
         );
     }
 }
 
 ReactDOM.render(
-    <App />,
+    <SimpleGoldenAcornApp />,
     document.getElementById('root')
 );
