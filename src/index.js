@@ -10,6 +10,10 @@ function Button(props) {
     );
 }
 
+Button.PropTypes = {
+    label: PropTypes.string
+}
+
 function Display(props) {
     return <p>{props.children}</p>
 }
