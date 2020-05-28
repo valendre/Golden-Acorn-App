@@ -10,7 +10,7 @@ function Button(props) {
     );
 }
 
-Button.PropTypes = {
+Button.propTypes = {
     label: PropTypes.string
 }
 
