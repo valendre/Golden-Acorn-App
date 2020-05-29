@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+
+main {
+    background-color: white;
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto
+}
+
+nav a {
+    margin-right: 1em;
+    font-weight: bold;
+}
