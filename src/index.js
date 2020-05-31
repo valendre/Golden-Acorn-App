@@ -10,25 +10,27 @@ import {
     Link
 } from "react-router-dom";
 
-export default function App() {
-    return (
-        <Router>
-            <main>
-                <nav>
-                    <Link to="/">Home page</Link>
-                    <Link to="/simple/states/">With states</Link>
-                </nav>
-                <Switch>
-                    <Route exact path="/">
-                        <HomePage />
-                    </Route>
-                    <Route path="/simple/states/">
-                        <SimpleGoldenAcornApp />
-                    </Route>
-                </Switch>
-            </main>
-        </Router>
-    );
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <main>
+                    <nav>
+                        <Link to="/">Home page</Link>
+                        <Link to="/simple/states/">With states</Link>
+                    </nav>
+                    <Switch>
+                        <Route exact path="/">
+                            <HomePage />
+                        </Route>
+                        <Route path="/simple/states/">
+                            <SimpleGoldenAcornApp />
+                        </Route>
+                    </Switch>
+                </main>
+            </Router>
+        );
+    }
 }
 
 function Button(props) {
