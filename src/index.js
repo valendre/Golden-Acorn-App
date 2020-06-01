@@ -50,7 +50,7 @@ function Display(props) {
 }
 
 function HomePage() {
-    return <h1>Golden Accorn is life! 🌰</h1>
+    return <h1>Golden Acorn is life! 🌰</h1>
 }
 
 class SimpleGoldenAcornApp extends React.Component {
@@ -75,7 +75,7 @@ class SimpleGoldenAcornApp extends React.Component {
     render() {
         return (
             <content>
-                <h1>Golden Accorn application with states 🌰</h1>
+                <h1>Golden Acorn application with states 🌰</h1>
                 <Button
                     label="Buy one"
                     onClick={() => this.changeValue(1)}
