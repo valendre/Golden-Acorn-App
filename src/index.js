@@ -61,7 +61,7 @@ class SimpleGoldenAcornApp extends React.Component {
         };
     }
 
-    handleClick(i) {
+    changeValue(i) {
         this.setState({
             value: this.state.value + i,
         });
@@ -78,14 +78,14 @@ class SimpleGoldenAcornApp extends React.Component {
                 <h1>Golden Accorn application with states 🌰</h1>
                 <Button
                     label="Buy one"
-                    onClick={() => this.handleClick(1)}
+                    onClick={() => this.changeValue(1)}
                 />
                 <Display>
                     {this.state.value}
                 </Display>
                 <Button
                     label="Eat one"
-                    onClick={() => this.handleClick(-1)}
+                    onClick={() => this.changeValue(-1)}
 
                 />
             </content>
